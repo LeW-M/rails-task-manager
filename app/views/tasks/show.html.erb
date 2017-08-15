@@ -1,0 +1,9 @@
+<h1>Show the task by finding the id of task</h1>
+
+<ol>
+  <li>Task: <%= @task.title %>; Done? <%= @task.status %> <%= link_to 'delete task', tasks_path , method: :delete %></li>
+</ol>
+
+<%= link_to 'Edit task', edit_task_path(@task) %>
+<%= link_to 'Back to All Tasks', tasks_path %>
+

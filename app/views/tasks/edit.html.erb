@@ -1,0 +1,12 @@
+<h1>Update the records using the form below</h1>
+
+<%= form_for @task do |f| %>
+  <%= f.text_field :title, placeholder: "Grocery shopping"%>
+  <%= f.check_box :status %>
+  <%= f.label "done?" %>
+  <%= f.submit %>
+<% end %>
+
+
+
+<%= link_to 'Back to All Tasks', tasks_path %>
